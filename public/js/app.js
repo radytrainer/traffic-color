@@ -21,12 +21,12 @@ function setColor(event) {
         col3: color3
     }
 
-    const url = "http://localhost:3000/color";
+    const url = "https://traffic-color.herokuapp.com/color";
     axios.post(url, color).then(showData)
 }
 
 function getColor() {
-    const url = "http://localhost:3000/color";
+    const url = "https://traffic-color.herokuapp.com/color";
     axios.get(url).then(showData)
 } 
 
