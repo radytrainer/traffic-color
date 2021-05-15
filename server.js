@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 const {readFileSync, writeFileSync} = require('fs');
 
-const port = 3000;
-app.listen(port, () => console.log("Server running..."))
+app.listen(process.env.PORT || 5000, () => console.log("Server running..."))
 
 app.use(express.static('public'))
 app.use(express.json());
