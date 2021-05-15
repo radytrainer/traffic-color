@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="manage">
+            <div class="title">
+                <h2>Manage Color</h2>
+            </div>
+            <div class="set-color">
+                <div class="set-color">
+                    <label>Set Color 1:</label>
+                    <select id="set1">
+                        <option value="#ff0303">RED</option>
+                        <option value="#fceb06">YELLOW</option>
+                        <option value="#07cc53">GREEN</option>
+                    </select>
+                </div>
+                <div class="set-color">
+                    <label>Set Color 2:</label>
+                    <select id="set2">
+                        <option value="#ff0303">RED</option>
+                        <option value="#fceb06">YELLOW</option>
+                        <option value="#07cc53">GREEN</option>
+                    </select>
+                </div>
+                <div class="set-color">
+                    <label>Set Color 3:</label>
+                    <select id="set3">
+                        <option value="#ff0303">RED</option>
+                        <option value="#fceb06">YELLOW</option>
+                        <option value="#07cc53">GREEN</option>
+                    </select>
+                </div>
+                <div class="btn">
+                    <button id="setAllColor">Set Color</button>
+                </div>
+            </div>
+        </div>
+        <div class="colors">
+            <div class="title">
+                <h2>Traffic Color</h2>
+            </div>
+            <div class="color-group">
+                <div id="color1"></div>
+                <div id="color2"></div>
+                <div id="color3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
